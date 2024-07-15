@@ -1,0 +1,12 @@
+{
+    "include": [ "src"], // src의 모든 파일을 확인한다는 것을 의미 // include 배열에는 자바스크립트로 컴파일하고 싶은 모든 디렉터리를 넣을 것.
+    "compilerOptions": {
+        "outDir": "build",    // outDir은 자바스크립트 파일이 생성될 디렉터리를 지정함. 
+        "target": "ES6",      // target은 타입스크립트를 어떤 버전의 자바스크립트로 컴파일하고 싶은지를 나타냄
+        "lib": ["ES6"],       // lib는 합쳐진 라이브러리의 정의 파일을 특정해주는 역할을 한다
+        "strict": true,       // strict는 모든 엄격한 타입 검사 옵션을 활성화합니다. strict 플래그는 프로그램 정확성을 더 강력하게 보장하는 광범위한 타입 검사 동작을 가능하게 합니다.
+        // "allowJs": true,      // allowJs 자바스크립트를 허용한다, 
+        "esModuleInterop": true,   // CommonJS 모듈을 ES6 모듈 코드베이스로 가져오려고 할 때  발생하는 문제를 해결합니다. ES6 모듈 사양을 준수하여 CommonJS 모듈을 정상적으로 가져올 수 있게 해줍니다.
+        "module": "CommonJS",   // 
+    }
+}
